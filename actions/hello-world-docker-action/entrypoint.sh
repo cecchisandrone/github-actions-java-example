@@ -1,5 +1,8 @@
 #!/bin/sh -l
 
-echo "Hello $1"
+echo "Running command: $1"
+pwd
+ls -al
+ent which
 time=$(date)
 echo "time=$time" >> $GITHUB_OUTPUT
